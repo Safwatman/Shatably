@@ -89,34 +89,6 @@
         </form>
     </div>
 
-    <!-- <img src="images/Black and White Minimal Monogram Logo.svg" class="logo" alt="website-logo"> -->
-    <!-- <div class="reg">
-        <img src="images/Black and White Minimal Monogram Logo.svg" alt="">
-        <div class="regestration">
-            <div class="tab">
-                <div class="tab-inner">
-                    <a href="sign-up.html">
-                        <button class="tablinks active" onclick="openCity(event, 'sign-in')">Customer</button>
-                    </a>
-                </div>
-                <div class="tab-inner">
-                    <a href="sign-up.html">
-                        <button class="tablinks" onclick="openCity(event, 'sign-up')" id="defaultOpen">User</button>
-                    </a>
-                </div>
-            </div>
-            <form action="index.php" method="POST" class="form tabcontent">
-                <input type="text" id="usName" name="username" placeholder="Full Name">
-                <input type="email" name="email" placeholder="Email">
-                <input type="password" name="password" placeholder="Password">
-                <input type="password" name="confirmPassword" placeholder="Confirm Password">
-                <input type="submit" value="Sign up">
-            </form>
-            <div class="new-account">Already have an account? <a href="sign-in2.html">Sign in</a></div>
-
-        </div>
-
-    </div> -->
 
      <!-- ===================== Footer ===================== -->
      <footer>

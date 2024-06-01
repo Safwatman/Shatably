@@ -36,40 +36,29 @@ a {
 }
 .reg-form {
   margin: 40px auto;
-  /* border: 2px solid var(--secondary-color); */
-  border-radius: var(--border-radius);
-  width: 900px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  position: relative;
+  justify-content: center;
+  gap: 50px;
 }
 .reg-form img {
   width: 400px;
 }
-/* .reg-form::after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 100%;
-  background-color: var(--secondary-color);
-  left: 50%;
-  transform: translate(-50%);
-} */
 .reg-form form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
-.reg-form form input, .reg-form form button {
+.reg-form form input,
+.reg-form form button {
   margin: 10px;
   padding: 15px;
   border: 2px solid var(--secondary-color);
-  outline: none;
   border-radius: var(--border-radius);
+  outline: none;
   width: 350px;
   transition: 0.3s;
 }
@@ -77,8 +66,7 @@ a {
   cursor: pointer;
   color: var(--secondary-color);
   background-color: var(--main-color);
-  font-size: 20px;
-  width: 200px;
+  width: 175px;
 }
 .reg-form form button:hover {
   color: var(--main-color);
@@ -86,7 +74,6 @@ a {
 }
 .reg-form form input::placeholder {
   color: var(--secondary-color);
-  font-size: large;
 }
 .reg-form form input:focus {
   background-color: var(--main-color);
@@ -95,14 +82,14 @@ a {
   color: transparent;
 }
 .forgot-password {
-  font-size: 18px;
   margin-top: 30px;
-  text-decoration: underline;
   cursor: pointer;
+}
+.forgot-password:hover {
+  text-decoration: underline;
 }
 .new-account {
   margin-top: 50px;
-  font-size: 18px;
   text-align: center;
 }
 .new-account a {

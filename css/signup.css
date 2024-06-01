@@ -28,34 +28,20 @@ a {
 }
 
 /* Sign up */
-
 .welcome {
-  font-size: 20px;
   text-align: center;
-  margin-top: 50px;
+  margin: 40px 0;
 }
-
 .reg-form {
-  margin: 50px auto;
-  border: 2px solid var(--secondary-color);
-  border-radius: var(--border-radius);
-  width: 1000px;
+  margin: 40px auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 6.5%;
-  position: relative;
-}
-.reg-form::after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  height: 100%;
-  background-color: var(--secondary-color);
-  left: 50%;
-  transform: translate(-50%);
+  justify-content: center;
+  gap: 50px;
 }
 .reg-form img {
-  background-color: var(--main-color);
+  width: 400px;
 }
 .reg-form form {
   padding: 20px;
@@ -71,25 +57,22 @@ a {
   width: 165px;
   gap: 10px;
 }
-.reg-form form input {
+.reg-form form input, .reg-form form button {
   margin: 10px;
   padding: 15px;
   border: 2px solid var(--secondary-color);
   outline: none;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   width: 350px;
-  font-size: 18px;
-
 }
-.reg-form form input[class="submit"] {
+.reg-form form button {
   cursor: pointer;
   color: var(--secondary-color);
   background-color: var(--main-color);
-  font-size: 18px;
-  width: 200px;
+  width: 175px;
   transition: 0.4s;
 }
-.reg-form form input[class="submit"]:hover {
+.reg-form form button:hover {
   background-color: var(--secondary-color);
   color: var(--main-color);
 }
@@ -100,24 +83,10 @@ a {
   color: transparent;
 }
 .new-account {
-  margin: 20px 0; 
-  font-size: 18px;
+  margin: 20px 0;
   text-align: center;
 }
 .new-account a {
   border-bottom: 2px solid var(--secondary-color);
   font-weight: bold;
 }
-
-/* 
-    Signature idea
-  .logo {
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      position: absolute;
-      top: 50%;
-      left: 25%;
-      transform: translateY(-50%);
-      opacity: 0.5;
-  } */

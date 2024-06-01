@@ -38,29 +38,25 @@
     <!-- ===================== END Navigation Bar ===================== -->
 
     <div class="welcome">
-        <h2>Sign in as a customer</h2>
+        <h2>Customer Sign in</h2>
     </div>
 
     <div class="reg-form">
-        <!-- <img src="images/SHATTABLY logo.jpg" alt="website-logo"> -->
         <img src="images/sign-in-photo.jpg" alt="website-logo">
         <form action="index.php" method="post">
-            <input type="email" class="email" name="email" placeholder="Email">
-            <input type="password" class="pass" name="password" placeholder="Password">
-            <input type="submit" class="submit" value="Sign in">
+            <input type="email" class="email" name="email" placeholder="Email" required>
+            <input type="password" class="pass" name="password" placeholder="Password" required>
+            <input type="tel" class="cus-phone" name="customer-phone" placeholder="Phone number">
+            <button type="submit" class="submit">Sign in </button>
             <div class="forgot-password">Forgot password?</div>
             <div class="new-account">New account? <a href="cus-wo-register.html">Register</a></div>
-
         </form>
     </div>
-
-    <!-- <img src="images/Black and White Minimal Monogram Logo.svg" class="logo" alt="website-logo"> -->
-
 
     <!-- ===================== Footer ===================== -->
     <footer>
         <div class="container">
-            <img decoding="async" src="images/shattablyLogo.svg" alt="Logo" />
+            <img src="images/shattablyLogo.svg" alt="Logo" />
             <p>We are social</p>
             <div class="social-icons">
                 <i class="fab fa-facebook-f"></i>
@@ -76,7 +72,6 @@
         </div>
     </footer>
     <!-- ===================== END Footer ===================== -->
-
 
 
 
