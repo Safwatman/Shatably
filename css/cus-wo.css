@@ -126,16 +126,21 @@ a {
   background-color: var(--secondary-color);
   color: var(--main-color);
 }
+.label {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px;
+}
 /* Content */
 .career {
-  border: 2px solid var(--secondary-color);
-  border-radius: var(--border-radius);
-  width: 1000px;
-  height: 500px;
+  /* border: 2px solid var(--secondary-color); */
+  /* border-radius: var(--border-radius); */
+  width: 750px;
   padding: 20px;
   margin: 20px auto;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 .career img {

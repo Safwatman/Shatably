@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Register | SHATTABLY</title>
      <!-- Title Icon -->
-     <link rel="icon" type="image/png" href="/images/SHATTABLYwhite.png" />
+     <link rel="icon" type="image/png" href="images/shattablyLogo.svg" />
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="css/Normalize.css">
     <!-- Font Awesome Library -->
@@ -25,7 +25,7 @@
             <a href="index.html" target="_self">SHATTABLY</a>
         </h1>
         <a href="index.html" class="logo">
-            <img src="images/Black and White Minimal Monogram Logo.svg" alt="website-logo">
+            <img src="images/shattablyLogo.svg" alt="website-logo">
         </a>
         <ul>
             <li>
