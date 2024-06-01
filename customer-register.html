@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Customer - Register</title>
      <!-- Title Icon -->
-     <link rel="icon" type="image/png" href="/images/SHATTABLYwhite.png" />
+     <link rel="icon" type="image/png" href="images/shattablyLogo.svg" />
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="css/Normalize.css">
     <!-- Font Awesome Library -->
@@ -42,19 +42,48 @@
     </div>
 
     <div class="reg-form">
-        <!-- <img src="images/shattablyLogo.svg" alt="website-logo"> -->
-        <img src="images/shattablyLogo.svg" alt="website-logo">
-        <form action="index.php" method="post">
+        <img src="images/register-photo.jpg" alt="website-logo">
+        <form action="CRegister.php" method="POST">
             <div class="full-name">
-                <input type="text" class="f-name" name="first-name" placeholder="First name">
-                <input type="text" class="l-name" name="last-name" placeholder="Last name">
+                <?php 
+                    if(isset($firstname_error)){
+                        echo $firstname_error;
+                    }
+                ?>
+                <input type="text" class="f-name" name="firstname" placeholder="First name">
+                <?php 
+                    if(isset($lastname_error)){
+                        echo $lastname_error;
+                    }
+                ?>
+                <input type="text" class="l-name" name="lastname" placeholder="Last name">
             </div>
+            <?php 
+                    if(isset($email_error)){
+                        echo $email_error;
+                    }
+            ?>
             <input type="email" class="email" name="email" placeholder="Email">
+            <?php 
+                    if(isset($password_error)){
+                        echo $password_error;
+                    }
+            ?>
             <input type="password" class="pass" name="password" placeholder="Password">
-            <input type="password" class="pass" name="c-password" placeholder="Confirm password">
+            <?php 
+                    if(isset($c_password_error)){
+                        echo $c_password_error;
+                    }
+            ?>
+            <input type="password" class="pass" name="c_password" placeholder="Confirm password">
+            <?php 
+                    if(isset($phone_error)){
+                        echo $phone_error;
+                    }
+            ?>
             <input type="tel" class="phone" name="phone" placeholder="Phone number">
-            <input type="submit" class="submit">
-            <div class="new-account">Already have an account? <a href="cus-wo-sign-in.html">Sign in</a></div>
+            <button name="submit" class="submit">Submit</button>
+            <div class="new-account">Already have an account? <a href="sign-in.html">Sign in</a></div>
         </form>
     </div>
 
