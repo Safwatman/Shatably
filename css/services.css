@@ -1,11 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 /* Variables */
 :root {
   --main-color: #ffffff;
@@ -142,78 +134,41 @@ a {
   background-color: var(--secondary-color);
   color: var(--main-color);
 }
-
-/* shattably defaults */
-/* 
-    /* Variables 
-:root {
-    --main-color: #ffffff;
-    --secondary-color: #000000;
-    --border-radius: 6px;
-  }
-  
-  /* Global Rules 
-  * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    font-family: "Cairo";
-  }
-  ul {
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-    color: var(--secondary-color);
-    display: inline-block;
-  }
-*/
-
-/* hero img styles */
-/* .hero {
-  padding-bottom: 50px;
+/* Intro */
+.intro {
+  background-color: lightgray;
+  padding: 20px;
+  /* margin-top: 50px; */
+  margin-bottom: 50px;
+  background-color: #111827;
+  color: #f2f2f2;
 }
-.hero img {
-  width: 100%;
-  height: 90vh;
-  opacity: 45%;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.text-container {
+  width: 40%;
+}
+.text-container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.text-container p {
+  font-size: 20px;
+  line-height: 2;
+}
+.image-container {
+  width: 50%;
+}
+.image-container img {
+  width: 49.5%;
+  border-radius: var(--border-radius);
 }
 
-.hero-text h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-  color: var(--main2-color);
-}
-.hero-text p {
-  font-size: 1.3em;
-  margin-bottom: 20px;
-  text-indent: 15px;
-  color: var(--main2-color);
-} */
-
-/* section {
-  margin-bottom: 40px;
-} */
+/* END Intro */
 
 /* Service section styles */
 .service {
@@ -314,8 +269,9 @@ a {
   transform: translateX(-50%);
   text-align: center;
 }
-.client-rate > p, .client-rate > div {
-    display: none;
+.client-rate > p,
+.client-rate > div {
+  display: none;
 }
 .client-rate #order-button {
   padding: 10px 25px;

@@ -345,6 +345,55 @@ a {
   transform: translate(-50%, -50%);
   font-size: 20px;
 }
+/* New layout */
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.service-card {
+  width: 300px;
+  margin: 20px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #111827;
+  color: #f2f2f2;
+  transition: all 0.3s ease-in-out;
+}
+.service-card:hover {
+  box-shadow: 0 0 30px 0 #282936;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%;
+  }
+}
+.service-card h3 {
+  margin: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.service-card i {
+  font-size: 30px;
+  color: #a78bfa;
+  padding: 15px;
+  transition: all 0.3s linear;
+  transform: rotate(-45deg);
+}
+.service-card .icon-container {
+  border: 2px solid #282936;
+  transition: 0.3s linear;
+  width: fit-content;
+  margin: 0 auto;
+  transform: rotate(45deg);
+}
+
+/* END New layout */
+
 .categories .see-more {
   margin: 30px;
   text-align: center;
@@ -358,10 +407,6 @@ a {
   transition: 0.4s;
   cursor: pointer;
 }
-/* .categories a:hover {
-  background-color: var(--main-color);
-  color: var(--secondary-color);
-} */
 .lm {
   margin: 20px;
   text-align: center;
@@ -404,7 +449,6 @@ button.learn-more .circle .icon {
   margin: auto;
   background: #fff;
 }
-
 button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
@@ -440,18 +484,15 @@ button.learn-more .button-text a {
   text-align: center;
   text-transform: uppercase;
 }
-
 .buttonlm:hover .circle {
   width: 100%;
 }
-
 .buttonlm:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
 }
-
 .buttonlm:hover .button-text a {
-  color: #fff;
+  color: #f2f2f2;
 }
 /* Newsletter */
 /* 
@@ -603,26 +644,49 @@ button.learn-more .button-text a {
 
 /* Pricing */
 .pricing-cards {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
 }
 .cardpr {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  margin: 50px auto;
-  width: 320px;
-  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+  padding: 40px;
   border-radius: 6px;
   background-color: #111827;
-  padding: 30px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+  .cardpr {
+    width: 80%;
+    text-align: center;
+  }
+  .cardpr:hover {
+    transform: none;
+  }
+  .cardpr .lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .cardpr .action {
+    width: 50%;
+  }
+}
+.cardpr:not(.pro):hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px 0 #282936;
 }
 .pro {
-  transform: scale(1.15);
+  transform: scale(1.1);
   position: relative;
+}
+.pro:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 30px 0 #282936;
 }
 .pro::after {
   content: "Hot deal";
@@ -674,6 +738,7 @@ button.learn-more .button-text a {
   color: #a78bfa;
 }
 button.action {
+  width: 100%;
   outline: none;
   border-radius: var(--border-radius);
   background-color: #a78bfa;
