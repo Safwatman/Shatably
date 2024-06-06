@@ -46,699 +46,484 @@
     <div class="intro">
         <div class="container">
             <div class="text-container">
-              <h1>Discover all services</h1>
-              <p>Find the perfect service for your needs. Browse our selection of several services,
-                and see how we can help you to get through EVERYTHING!
-              </p>
+                <h1>Discover all services</h1>
+                <p>Find the perfect service for your needs. Browse our selection of several services,
+                    and see how we can help you to get through EVERYTHING!
+                </p>
             </div>
             <div class="image-container">
-              <img src="images/bs1.jpg" class="construction-image">
-              <img src="images/carpenter1.jpg">
-              <img src="images/footer2.jpg">
-              <img src="images/paint1.jpg">
+                <img src="images/bs1.jpg" class="construction-image">
+                <img src="images/carpenter1.jpg">
+                <img src="images/footer2.jpg">
+                <img src="images/paint1.jpg">
             </div>
-          </div>
+        </div>
     </div>
     <!-- ===================== END Intro ===================== -->
-
-
+    
+    <!-- ===================== Filter ===================== -->
+    <!-- <div class="fliter">
+        <div class="service1"></div>
+        <div class="service2"></div>
+        <div class="service3"></div>
+        <div class="service4"></div>
+        <div class="service5"></div>
+        <div class="service6"></div>
+        <div class="service7"></div>
+        <div class="service8"></div>
+        <div class="service9"></div>
+        <div class="service10"></div>
+    </div> -->
+    <!-- ===================== END Fliter ===================== -->
+    
     <!-- ===================== Services ===================== -->
     <main class="whole-services">
         <section>
-            <div class="service" onclick="document.getElementById('hidden').style.display='block'">
-                <h3> Foundation Works</h3>
-                <p>
-                    Foundation works refer to the construction activities involved in
-                    creating the base or foundation upon which a building or structure rests.
-                </p>
-            </div>
-            <div class="agents" id="hidden">
-                <div class="agent">
-                    <img src="images/man1 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Ahmed Moustafa</h4>
-                        <p>Job: Excavator-Operator</p>
-                        <p>Cost: 8000 L.E.</p>
-                        <p>Governate: Cairo</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star "></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="number">
-                                <p><span class="one">4.0</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
-                            </div>
-                        </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
-                            </div>
-                            <button type="button" id="order-button">Profile</button>
-                        </div>
-                    </div>
+            <div class="service-container">
+                <div class="service">
+                    <img src="images/FoundationWorks1.jpg" alt="">
+                    <h2>Foundation Works</h2>
+                    <p>
+                        Foundation works refer to the construction activities involved in
+                        creating the base or foundation upon which a building or structure rests.
+                    </p>
                 </div>
-                <div class="agent">
-                    <img src="images/man2 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Mohammed Kamal</h4>
-                        <p>Job: Site-Supervisor</p>
-                        <p>Cost: 3500 L.E.</p>
-                        <p>Governate: Alexandria</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                <div class="workers">
+                    <h2>Workers</h2>
+                    <div class="workers-container">
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
                             </div>
-                            <div class="number">
-                                <p><span class="one">4.1</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
-                            </div>
-                        </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
                             </div>
                         </div>
-                    </div>
-
-                </div>
-                <div class="agent">
-                    <img src="images/man3 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Elsayed Magdy</h4>
-                        <p>Job: Concrete Mason</p>
-                        <p>Cost: 3400 L.E.</p>
-                        <p>Governate: Cairo</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
                             </div>
-                            <div class="number">
-                                <p><span class="one">4.3</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
                             </div>
                         </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <div class="service">
-                <h3>Construction Works</h3>
-                <p>
-                    Construction works encompass a wide range of activities involved in building structures,
-                    infrastructure, or facilities.
-                    These works take place following the design phase and involve the physical realization of the
-                    planned project.
-                </p>
-            </div>
-            <div class="agents" id="hidden">
-                <!-- <i class="fa-solid fa-circle-info"></i> -->
-                <div class="agent">
-                    <img src="images/man4 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Mohammed Reda</h4>
-                        <p>Job: Project-Manager</p>
-                        <p>Cost: 5000 L.E.</p>
-                        <p>Governate: Elfayom</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star "></span>
-                                <span class="fa fa-star"></span>
+            <div class="service-container">
+                <div class="workers">
+                    <h2>Workers</h2>
+                    <div class="workers-container">
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
                             </div>
-                            <div class="number">
-                                <p><span class="one">3.6</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
                             </div>
                         </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
+                            </div>
+                        </div>
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="agent">
-                    <img src="images/man5 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Yehia Salah</h4>
-                        <p>Job: Architect</p>
-                        <p>Cost: 6000 L.E. </p>
-                        <p>Governate: Alexandria</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="number">
-                                <p><span class="one">4.5</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
-                            </div>
-
-                        </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- ----------------------------  -->
-                <div class="agent">
-                    <img src="images/man6 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Ali Hafez</h4>
-                        <p>Job: HVAC-Technician</p>
-                        <p>Cost: 4100 L.E.</p>
-                        <p>Governate: Cairo</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="number">
-                                <p><span class="one">4.4</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
-                            </div>
-
-                        </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="service">
+                    <img src="images/ConstructionWorks1.jpg" alt="">
+                    <h2>Construction Works</h2>
+                    <p>
+                        Construction works encompass a wide range of activities involved in building structures,
+                        infrastructure, or facilities.
+                        These works take place following the design phase and involve the physical realization of the
+                        planned project.
+                    </p>
                 </div>
             </div>
-            <div class="service">
-                <h3> Architectural Engineering</h3>
-                <p>
-                    Architectural engineering is a multidisciplinary field that focuses on the integration of
-                    engineering principles
-                    and technology with architectural design to create buildings and structures that are functional,
-                    safe, sustainable, and aesthetically pleasing.
-                </p>
-            </div>
-            <div class="agents" id="hidden">
-                <!-- <i class="fa-solid fa-circle-info"></i> -->
-                <div class="agent">
-                    <img src="images/man7 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Ahmed Ali</h4>
-                        <p>Job: Structural-Engineer</p>
-                        <p>Cost: 8000 L.E.</p>
-                        <p>Governate: Cairo</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </div>
-                            <div class="number">
-                                <p><span class="one">4.7</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
-                            </div>
-
-                        </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
-                            </div>
-                        </div>
-                    </div>
-
+            <div class="service-container">
+                <div class="service">
+                    <img src="images/ArchitecturalEngineering1.svg" style="background-color: white" alt="">
+                    <h2> Architectural Engineering</h2>
+                    <p>
+                        Architectural engineering is a multidisciplinary field that focuses on the integration of
+                        engineering principles
+                        and technology with architectural design to create buildings and structures that are functional,
+                        safe, sustainable, and aesthetically pleasing.
+                    </p>
                 </div>
-                <div class="agent">
-                    <img src="images/man8 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Karim Omar</h4>
-                        <p>Job: Electrical-Engineer</p>
-                        <p>Cost: 5000 L.E.</p>
-                        <p>Governate: Cairo</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
+                <div class="workers">
+                    <h2>Workers</h2>
+                    <div class="workers-container">
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
                             </div>
-                            <div class="number">
-                                <p><span class="one">2.7</span> out of 5</p>
-                                <p><span class="two">10 rating</span></p>
-                            </div>
-
-                        </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
                             </div>
                         </div>
-                    </div>
-
-                </div>
-                <!-- ----------------------------  -->
-                <div class="agent">
-                    <img src="images/man9 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Magdy Hany</h4>
-                        <p>Job: BIM-Specialist</p>
-                        <p>Cost: 8000 L.E.</p>
-                        <p>Governate: Cairo</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
                             </div>
-                            <div class="number">
-                                <p><span class="one">4.3</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
                             </div>
-
                         </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <div class="service">
-                <h3>Building Design</h3>
-                <p>
-                    Building design is a comprehensive process that involves conceptualizing, planning, and creating the
-                    layout, appearance, and functionality of a building or structure.
-                    It encompasses various disciplines, including architecture, engineering, interior design, and urban
-                    planning,
-                    to develop a cohesive and well-coordinated design solution that meets the needs and requirements of
-                    the project.
-                </p>
-            </div>
-            <div class="agents" id="hidden">
-                <!-- <i class="fa-solid fa-circle-info"></i> -->
-                <div class="agent">
-                    <img src="images/man10 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Alaa Rafaat</h4>
-                        <p>Job: Architectural-Designer</p>
-                        <p>Cost: 4500 L.E.</p>
-                        <p>Governate: Cairo</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star "></span>
-                                <span class="fa fa-star"></span>
+            <div class="service-container">
+                <div class="workers">
+                    <h2>Workers</h2>
+                    <div class="workers-container">
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
                             </div>
-                            <div class="number">
-                                <p><span class="one">4.2</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
-                            </div>
-
-                        </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
                             </div>
                         </div>
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
+                            </div>
+                        </div>
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-                <div class="agent">
-                    <img src="images/woman1 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Safa Alaa</h4>
-                        <p>Job: Urban-Planner</p>
-                        <p>Cost: 5500 L.E.</p>
-                        <p>Governate: Cairo</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="number">
-                                <p><span class="one">4.5</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
-                            </div>
-
-                        </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- ----------------------------  -->
-                <div class="agent">
-                    <img src="images/woman2 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Sara Osama</h4>
-                        <p>Job: Landscape-Architect</p>
-                        <p>Cost: 7000 L.E.</p>
-                        <p>Governate: Cairo</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                            </div>
-                            <div class="number">
-                                <p><span class="one">4.7</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
-                            </div>
-
-                        </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="service">
+                    <img src="images/building-design2.jpg" alt="">
+                    <h2>Building Design</h2>
+                    <p>
+                        Building design is a comprehensive process that involves conceptualizing, planning, and creating the
+                        layout, appearance, and functionality of a building or structure.
+                        It encompasses various disciplines, including architecture, engineering, interior design, and urban
+                        planning,
+                        to develop a cohesive and well-coordinated design solution that meets the needs and requirements of
+                        the project.
+                    </p>
                 </div>
             </div>
-            <div class="service">
-                <h3>Structural Framing</h3>
-                <p>
-                    Structural framing is a fundamental aspect of building construction, involving the assembly of
-                    structural elements to create the skeleton or framework of a building.
-                    This framework provides support for floors, walls, roofs, and other loads, ensuring the stability
-                    and integrity of the structure.
-                </p>
-            </div>
-            <div class="agents" id="hidden">
-                <!-- <i class="fa-solid fa-circle-info"></i> -->
-                <div class="agent">
-                    <img src="images/man2 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Ahmed Elsheikh</h4>
-                        <p>Job: Carpenter</p>
-                        <p>Cost: 2800 L.E.</p>
-                        <p>Governate: cairo</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star "></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                            <div class="number">
-                                <p><span class="one">4.2</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
-                            </div>
-
-                        </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
-                            </div>
-                        </div>
-                    </div>
-
+            <div class="service-container">
+                <div class="service">
+                    <img src="images/Structural-Framing1.svg" style="background-color: white" alt="">
+                    <h2>Structural Framing</h2>
+                    <p>
+                        Structural framing is a fundamental aspect of building construction, involving the assembly of
+                        structural elements to create the skeleton or framework of a building.
+                        This framework provides support for floors, walls, roofs, and other loads, ensuring the stability
+                        and integrity of the structure.
+                    </p>
                 </div>
-                <div class="agent">
-                    <img src="images/man4 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Saif Tarek</h4>
-                        <p>Job: Steel-Erecto</p>
-                        <p>Cost: 2200 L.E. </p>
-                        <p>Governate: Cairo</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star "></span>
-                                <span class="fa fa-star "></span>
-                                <span class="fa fa-star"></span>
+                <div class="workers">
+                    <h2>Workers</h2>
+                    <div class="workers-container">
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
                             </div>
-                            <div class="number">
-                                <p><span class="one">2.3</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
-                            </div>
-
-                        </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
                             </div>
                         </div>
-                    </div>
-
-                </div>
-                <!-- ----------------------------  -->
-                <div class="agent">
-                    <img src="images/man10 avatar.png" alt="here photo">
-                    <div class="info">
-                        <h4>Saied Rafaat</h4>
-                        <p>Job: Masonry-Contractor</p>
-                        <p>Cost: 4900 L .E.</p>
-                        <p>Governate: Cairo</p>
-                    </div>
-                    <div class="rating">
-                        <div class="agent-rate">
-                            <div class="agent-stars">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
                             </div>
-                            <div class="number">
-                                <p><span class="one">4.7</span> out of 5</p>
-                                <p><span class="two">10 ratings</span></p>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
                             </div>
-
                         </div>
-                        <div class="client-rate">
-                            <p>How was your experiment? </p>
-                            <div class="rating-ui">
-                                <input value="5" name="rating" id="star5" type="radio">
-                                <label for="star5"></label>
-                                <input value="4" name="rating" id="star4" type="radio">
-                                <label for="star4"></label>
-                                <input value="3" name="rating" id="star3" type="radio">
-                                <label for="star3"></label>
-                                <input value="2" name="rating" id="star2" type="radio">
-                                <label for="star2"></label>
-                                <input value="1" name="rating" id="star1" type="radio">
-                                <label for="star1"></label>
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+            <div class="service-container">
+                <div class="workers">
+                    <h2>Workers</h2>
+                    <div class="workers-container">
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
+                            </div>
+                        </div>
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
+                            </div>
+                        </div>
+                        <div class="worker-card">
+                            <div class="img-container">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
+                            </div>
+                            <div class="container">
+                                <h2 class="card-title">Ahmed Moustafa</h2>
+                                <p class="card-job">Excavator-Operator</p>
+                                <p class="card-gov">Cairo</p>
+                                <div class="worker-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <p class="price">Cost: 8000 L.E.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="images/Roof-Installation1.svg" alt="">
+                    <h2>Roof Installation</h2>
+                    <p>
+                        Roof installation is the process of assembling and installing the roofing system on a building's
+                        structure to provide protection from the elements and create a watertight barrier.
+                        It involves several steps and requires careful planning, precise execution, and attention to detail
+                        to ensure the roof's durability, functionality, and aesthetic appeal.
+                    </p>
+                </div>
+            </div>
+            <!--
             <div class="service">
                 <h3>Roof Installation</h3>
                 <p>
@@ -748,8 +533,7 @@
                     to ensure the roof's durability, functionality, and aesthetic appeal.
                 </p>
             </div>
-            <div class="agents" id="hidden">
-                <!-- <i class="fa-solid fa-circle-info"></i> -->
+            <div class="agents">
                 <div class="agent">
                     <img src="images/man7 avatar.png" alt="here photo">
                     <div class="info">
@@ -832,7 +616,6 @@
                     </div>
 
                 </div>
-                <!-- ----------------------------  -->
                 <div class="agent">
                     <img src="images/man8 avatar.png" alt="here photo">
                     <div class="info">
@@ -884,8 +667,7 @@
                     aesthetically pleasing, and functional floor.
                 </p>
             </div>
-            <div class="agents" id="hidden">
-                <!-- <i class="fa-solid fa-circle-info"></i> -->
+            <div class="agents">
                 <div class="agent">
                     <img src="images/man2 avatar.png" alt="here photo">
                     <div class="info">
@@ -968,7 +750,6 @@
                     </div>
 
                 </div>
-                <!-- ----------------------------  -->
                 <div class="agent">
                     <img src="images/man6 avatar.png" alt="here photo">
                     <div class="info">
@@ -1020,8 +801,7 @@
                     efficiency, and weather protection, and enhance the overall appearance of the structure.
                 </p>
             </div>
-            <div class="agents" id="hidden">
-                <!-- <i class="fa-solid fa-circle-info"></i> -->
+            <div class="agents">
                 <div class="agent">
                     <img src="images/man1 avatar.png" alt="here photo">
                     <div class="info">
@@ -1104,7 +884,6 @@
                     </div>
 
                 </div>
-                <!-- ----------------------------  -->
                 <div class="agent">
                     <img src="images/man3 avatar.png" alt="here photo">
                     <div class="info">
@@ -1156,8 +935,7 @@
                     while providing protection against wear and tear, moisture, and other environmental factors.
                 </p>
             </div>
-            <div class="agents" id="hidden">
-                <!-- <i class="fa-solid fa-circle-info"></i> -->
+            <div class="agents">
                 <div class="agent">
                     <img src="images/man4 avatar.png" alt="here photo">
                     <div class="info">
@@ -1240,7 +1018,6 @@
                     </div>
 
                 </div>
-                <!-- ----------------------------  -->
                 <div class="agent">
                     <img src="images/man1 avatar.png" alt="here photo">
                     <div class="info">
@@ -1292,8 +1069,7 @@
                     panels and utility sources.
                 </p>
             </div>
-            <div class="agents" id="hidden">
-                <!-- <i class="fa-solid fa-circle-info"></i> -->
+            <div class="agents">
                 <div class="agent">
                     <img src="images/man9 avatar.png" alt="here photo">
                     <div class="info">
@@ -1376,7 +1152,6 @@
                     </div>
 
                 </div>
-                <!-- ----------------------------  -->
                 <div class="agent">
                     <img src="images/man2 avatar.png" alt="here photo">
                     <div class="info">
@@ -1428,8 +1203,7 @@
                     plumbing codes and regulations.
                 </p>
             </div>
-            <div class="agents" id="hidden">
-                <!-- <i class="fa-solid fa-circle-info"></i> -->
+            <div class="agents">
                 <div class="agent">
                     <img src="images/man10 avatar.png" alt="here photo">
                     <div class="info">
@@ -1512,7 +1286,6 @@
                     </div>
 
                 </div>
-                <!-- ----------------------------  -->
                 <div class="agent">
                     <img src="images/man9 avatar.png" alt="here photo">
                     <div class="info">
@@ -1564,8 +1337,7 @@
                     essential for creating a functional and visually appealing environment.
                 </p>
             </div>
-            <div class="agents" id="hidden">
-                <!-- <i class="fa-solid fa-circle-info"></i> -->
+            <div class="agents">
                 <div class="agent">
                     <img src="images/woman3 avatar.png" alt="here photo">
                     <div class="info">
@@ -1648,7 +1420,6 @@
                     </div>
 
                 </div>
-                <!-- ----------------------------  -->
                 <div class="agent">
                     <img src="images/man10 avatar.png" alt="here photo">
                     <div class="info">
@@ -1689,7 +1460,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
+        -->
         </section>
     </main>
     <!-- ===================== END Services ===================== -->
@@ -1712,10 +1484,13 @@
                 <a href="terms.html" class="ter">Terms and Conditions</a>
                 <a href="privacy.html" class="pol">Privacy Policy</a>
             </div>
-            <p class="copyright"> &copy; 2024 <a href="index.html">SHATTABLY</a> All Right Reserved. </p>
+            <p class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a> All Right Reserved.
+            </p>
         </div>
     </footer>
     <!-- ===================== END Footer ===================== -->
+
+
 
 
 
