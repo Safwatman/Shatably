@@ -220,6 +220,7 @@ a {
 }
 .service-container .workers > h2 {
   text-align: center;
+  margin-bottom: 25px;
 } 
 /* ************* */
 .worker-card {
