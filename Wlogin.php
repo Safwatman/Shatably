@@ -11,14 +11,14 @@ if( isset($_POST['email']) &&  isset($_POST['password']) ){
 }
 
 if(empty($email)){
-    $email_error = "<p> please insert yout email</p>";
+    $email_error = "<p> Enter your email</p>";
     $errors = 1 ;
 }
 
 if(empty($password)){
-    $password_error = "<p> please insert yout password</p>";
+    $password_error = "<p> Enter your password</p>";
     $errors = 1 ;
-    include('sign-in.php');
+    include('worker-sign-in.php');
 }
 // else{
 //     include('sign-in.php');
@@ -35,8 +35,8 @@ if(!isset($errors)){
         header('Location: worker-profile.html');
         exit();
     }else{
-        $erroremail = "wrong email or password";
-        include('sign-in.php');
+        $erroremail = "Invalid Email or Password";
+        include('worker-sign-in.php');
     }
 }
 

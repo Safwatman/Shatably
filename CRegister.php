@@ -67,7 +67,7 @@ if(isset($_POST['submit'])){
     if( empty($phone) ){
         $phone_error='phone is required';
         $err_s = 1;
-        include('sign-up.php');
+        include('customer-register.php');
     }
     
     else{
@@ -78,7 +78,7 @@ if(isset($_POST['submit'])){
             header("location: customer-profile.html");
             // echo "true";
         }else{
-            include('sign-up.php');
+            include('customer-register.php');
         }
     }
 }

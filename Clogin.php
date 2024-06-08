@@ -11,12 +11,12 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
 }
 
 if (empty($email)) {
-    $email_error = "<p> please insert yout email</p>";
+    $email_error = "<p> Enter your email</p>";
     $errors = 1;
 }
 
 if (empty($password)) {
-    $password_error = "<p> please insert yout password</p>";
+    $password_error = "<p> Enter your password</p>";
     $errors = 1;
     include('customer-sign-in.php');
 }

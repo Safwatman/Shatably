@@ -84,7 +84,7 @@
                 echo $phone_error;
             }
             ?>
-            <input type="tel" class="phone" name="phone" placeholder="Phone number">
+            <input type="tel" class="phone" name="phone" placeholder="Phone number" required>
             <button name="submit" class="submit">Submit</button>
             <div class="new-account">Already have an account? <a href="worker-sign-in.html">Sign in</a></div>
         </form>

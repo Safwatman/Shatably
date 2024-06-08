@@ -1,0 +1,212 @@
+/* === Google Font Import - Poppins === */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Variables */
+:root {
+  --main-color: #ffffff;
+  --secondary-color: #000000;
+  --border-radius: 6px;
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
+  --dark-color: #111827;
+  --dark-violet-color: #a78bfa;
+  --light-violet-color: #7d2ae8;
+}
+
+/* Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo";
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  display: inline-block;
+}
+/* Media */
+
+/* Small Screens */
+
+/* @media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+} */
+
+/* Medium Screens */
+
+/* @media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+} */
+
+/* Large Screens */
+
+/* @media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+} */
+
+/* Components */
+.main-heading {
+  text-align: center;
+}
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #333;
+  bottom: -30px;
+  width: 120px;
+}
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  bottom: -38px;
+  background-color: white;
+}
+.main-heading p {
+  width: 550px;
+  margin: 0 auto 35px;
+  max-width: 100%;
+  color: #777;
+}
+/* ******************** */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--dark-color);
+  color: #f2f2f2;
+  padding: 20px;
+}
+.header .account-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header .account-info .acc-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header img {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.account-info .acc-name .customer-email {
+  margin-top: 10px;
+  color: var(--dark-violet-color);
+}
+.header .links-container a {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: var(--dark-violet-color);
+  color: var(--dark-color);
+  transition: 0.6s;
+}
+.header .links-container .edit-profile:hover {
+  background-color: var(--dark-color);
+  color: #f2f2f2;
+} 
+.personal-info {
+  padding: 20px;
+  /* background-color: var(--dark-color); */
+}
+.personal-info .section-title {
+  /* font-size: 20px; */
+  /* font-weight: bolder; */
+  margin-bottom: 10px;
+}
+.personal-info .info-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.billing-info {
+  margin-right: 30%;
+}
+.personal-info label,
+.personal-info p {
+  margin: 10px 0;
+}
+.personal-info p {
+  color: var(--dark-color);
+}
+.personal-info .section .label {
+  font-size: 16px;
+  color: #797f88;
+}
+.personal-info .table-section {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.personal-info .table-section .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 8px;
+  border: 2px solid #ddd;
+  text-align: left;
+}
+.table th {
+  background-color: #f2f2f2;
+}
+td p span {
+  font-weight: bold;
+}
+.button {
+  color: #f2f2f2;
+  background-color: var(--light-violet-color);
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--border-radius);
+}

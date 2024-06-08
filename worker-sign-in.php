@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in | SHATTABLY</title>
+    <title>Worker Sign-in | SHATTABLY</title>
     <!-- Title Icon -->
-    <link rel="icon" type="image/png" href="/images/SHATTABLYwhite.png" />
+    <link rel="icon" type="image/png" href="images/shattablyLogo.svg" />
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="css/Normalize.css">
     <!-- Font Awesome Library -->
@@ -25,14 +25,14 @@
             <a href="index.html" target="_self">SHATTABLY</a>
         </h1>
         <a href="index.html" class="logo">
-            <img src="images/Black and White Minimal Monogram Logo.svg" alt="website-logo">
+            <img src="images/shattablyLogo.svg" alt="website-logo">
         </a>
         <ul>
             <li>
-                <a href="sign-in.html">Sign in</a>
+                <a href="cus-wo-sign-in.html">Sign in</a>
             </li>
             <li>
-                <a href="sign-up.html">Register</a>
+                <a href="cus-wo-register.html">Register</a>
             </li>
         </ul>
     </div>
@@ -64,17 +64,16 @@
             ?>
             <button type="submit" class="submit"> submit </button>
             <div class="forgot-password">Forgot password?</div>
-            <div class="new-account">New account? <a href="sign-up.html">Register</a></div>
+            <div class="new-account">New account? <a href="cus-wo-register.html">Register</a></div>
         </form>
     </div>
 
-    <!-- <img src="images/Black and White Minimal Monogram Logo.svg" class="logo" alt="website-logo"> -->
 
 
     <!-- ===================== Footer ===================== -->
     <footer>
         <div class="container">
-            <img decoding="async" src="images/Black and White Minimal Monogram Logo.svg" alt="Logo" />
+            <img decoding="async" src="images/shattablyLogo.svg" alt="Logo" />
             <p>We are social</p>
             <div class="social-icons">
                 <i class="fab fa-facebook-f"></i>
