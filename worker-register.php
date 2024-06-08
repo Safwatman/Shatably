@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Worker - Register</title>
-     <!-- Title Icon -->
-     <link rel="icon" type="image/png" href="images/shattablyLogo.svg" />
+    <title> Worker | Register</title>
+    <!-- Title Icon -->
+    <link rel="icon" type="image/png" href="images/shattablyLogo.svg" />
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="css/Normalize.css">
     <!-- Font Awesome Library -->
@@ -45,52 +45,55 @@
         <img src="images/register-photo.jpg" alt="website-logo">
         <form action="WRegister.php" method="POST">
             <div class="full-name">
-                <?php 
-                    if(isset($firstname_error)){
+                <input type="text" class="f-name" name="firstname" placeholder="First name">
+                <div class="fullname-php" style="color: red;">
+                    <?php
+                    if (isset($firstname_error)) {
                         echo $firstname_error;
                     }
-                ?>
-                <input type="text" class="f-name" name="firstname" placeholder="First name">
-                <?php 
-                    if(isset($lastname_error)){
-                        echo $lastname_error;
-                    }
+                    ?>
+                </div>
+
+                <?php
+                if (isset($lastname_error)) {
+                    echo $lastname_error;
+                }
                 ?>
                 <input type="text" class="l-name" name="lastname" placeholder="Last name">
             </div>
-            <?php 
-                    if(isset($email_error)){
-                        echo $email_error;
-                    }
+            <?php
+            if (isset($email_error)) {
+                echo $email_error;
+            }
             ?>
             <input type="email" class="email" name="email" placeholder="Email">
-            <?php 
-                    if(isset($password_error)){
-                        echo $password_error;
-                    }
+            <?php
+            if (isset($password_error)) {
+                echo $password_error;
+            }
             ?>
             <input type="password" class="pass" name="password" placeholder="Password">
-            <?php 
-                    if(isset($c_password_error)){
-                        echo $c_password_error;
-                    }
+            <?php
+            if (isset($c_password_error)) {
+                echo $c_password_error;
+            }
             ?>
             <input type="password" class="pass" name="c_password" placeholder="Confirm password">
-            <?php 
-                    if(isset($phone_error)){
-                        echo $phone_error;
-                    }
+            <?php
+            if (isset($phone_error)) {
+                echo $phone_error;
+            }
             ?>
             <input type="tel" class="phone" name="phone" placeholder="Phone number">
             <button name="submit" class="submit">Submit</button>
-            <div class="new-account">Already have an account? <a href="sign-in.html">Sign in</a></div>
+            <div class="new-account">Already have an account? <a href="worker-sign-in.html">Sign in</a></div>
         </form>
     </div>
 
-     <!-- ===================== Footer ===================== -->
-     <footer>
+    <!-- ===================== Footer ===================== -->
+    <footer>
         <div class="container">
-            <img decoding="async" src="images/shattablyLogo.svg" alt="Logo" />
+            <img src="images/shattablyLogo.svg" alt="Logo" />
             <p>We are social</p>
             <div class="social-icons">
                 <i class="fab fa-facebook-f"></i>
@@ -102,11 +105,10 @@
                 <a href="terms.html" class="ter">Terms and Conditions</a>
                 <a href="privacy.html" class="pol">Privacy Policy</a>
             </div>
-            <p class="copyright"> &copy; 2024 <a href="index.html">SHATTABLY</a> All Right Reserved. </p>
+            <p class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a> All Right Reserved. </p>
         </div>
     </footer>
     <!-- ===================== END Footer ===================== -->
-
 
 
 

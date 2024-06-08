@@ -33,16 +33,16 @@ if (isset($_POST['submit'])) {
         $lastname_error = 'required';
         $err_s = 1;
     } elseif (strlen($lastname) < 2) {
-        $lastname_error = "First name must be letters only.";
+        $lastname_error = "First name must be letters only";
         $err_s = 1;
     } elseif (filter_var($lastname, FILTER_VALIDATE_INT)) {
-        $lastname_error = "Last name must be letters only.";
+        $lastname_error = "Last name must be letters only";
         $err_s = 1;
     }
 
 
     if (empty($email)) {
-        $email_error = "Email can not be empty.";
+        $email_error = "Email can not be empty";
         $err_s = 1;
     }
 
@@ -59,15 +59,15 @@ if (isset($_POST['submit'])) {
     if (empty($phone)) {
         $phone_error = 'Phone can not be empty';
         $err_s = 1;
-        include('sign-up.php');
+        include('worker-register.php');
     } else {
         if ($err_s == 0) {
             $sql = "INSERT INTO `worker` (`first-name` , `last-name` , `email` , `password` , `phone-number` ) 
             VALUES ('$firstname' , '$lastname' , '$email' , '$md5_pass' , '$phone')";
             mysqli_query($conn, $sql);
-            header("location:http://localhost/Graduation%20Project/");
+            header("location: worker-profile.html");
         } else {
-            include('sign-up.php');
+            include('worker-register.php');
         }
     }
 }

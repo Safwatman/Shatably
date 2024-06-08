@@ -75,7 +75,7 @@ if(isset($_POST['submit'])){
             $sql = "INSERT INTO `customer` (`first-name` , `last-name` , `email` , `password` , `phone-number` ) 
             VALUES ('$firstname' , '$lastname' , '$email' , '$md5_pass' , '$phone')";
             mysqli_query($conn,$sql);
-            header("location:http://localhost/Graduation%20Project/");
+            header("location: customer-profile.html");
             // echo "true";
         }else{
             include('sign-up.php');
