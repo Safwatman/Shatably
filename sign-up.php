@@ -83,7 +83,6 @@
                     }
             ?>
             <input type="tel" class="phone" name="phone" placeholder="Phone number">
-            <!-- <input type="submit" class="submit"> -->
             <button name="submit" class="submit">Submit</button>
             <div class="new-account">Already have an account? <a href="sign-in.html">Sign in</a></div>
         </form>
