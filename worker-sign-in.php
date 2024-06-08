@@ -39,11 +39,11 @@
     <!-- ===================== END Navigation Bar ===================== -->
 
     <div class="welcome">
-        <h2>Sign in</h2>
+        <h2>Worker Sign-in</h2>
     </div>
 
     <div class="reg-form">
-        <img src="images/SHATTABLY logo.jpg" alt="website-logo">
+        <img src="images/sign-in-photo.jpg" alt="website-logo">
         <form action="Wlogin.php" method="POST">
             <?php
             if (isset($erroremail)) {

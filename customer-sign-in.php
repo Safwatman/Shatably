@@ -38,7 +38,7 @@
     <!-- ===================== END Navigation Bar ===================== -->
 
     <div class="welcome">
-        <h2>Customer Sign in</h2>
+        <h2>Customer Sign-in</h2>
     </div>
 
     <div class="reg-form">
